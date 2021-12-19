@@ -78,14 +78,13 @@ app.use(session({ secret: process.env.SECRET, resave: false, saveUninitialized: 
 app.use(passport.initialize());
 app.use(flash());
 app.use(passport.session());
+app.use(compression()); //Compress all routes
+app.use(helmet());
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
-app.use("/public", express.static(__dirname + '/public'));
-app.use(compression()); //Compress all routes
-app.use(helmet());
 
 // Access the user object from anywhere in our application
 app.use((req, res, next) => {
