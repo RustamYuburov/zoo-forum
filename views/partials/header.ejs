@@ -1,0 +1,28 @@
+<header>
+  <div class="logo-name">
+    <a href="/">
+      <h2 class="name">Zoo Forum</h2>
+      <img class="logo" src="/images/logo.png" />
+    </a>
+  </div>
+
+  <div class="nav-links">
+    <nav>
+      <% if (!locals.currentUser) { %>
+      <ul>
+        <li><a href="/log-in">Log in</a></li>
+        <li><a href="/sign-up">Sign up</a></li>
+      </ul>
+      <% } else { %>
+      <ul>
+        <li><a href="/create-message">Create a new message</a></li>
+        <% const adminship = !currentUser.admin ? '<a href="/adminship">Become Admin</a>' : '<a href="/cancel-adminship">Cancel Adminship</a>' %>
+        <li><%- adminship %> </li>
+        <% const membership = !currentUser.member ? '<a href="/membership">Become Member</a>' : '<a href="/cancel-membership">Cancel Membership</a>' %>
+        <li><%- membership %> </li>
+        <li><a href="/log-out">Log out</a></li>
+      </ul>
+      <% } %>
+    </nav>
+  </div>
+</header>

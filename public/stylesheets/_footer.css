@@ -1,0 +1,35 @@
+footer {
+  bottom: 0;
+  width: 100%;
+  border: solid black;
+  background-color: black;
+  padding: 10px 25%;
+  justify-content: space-between;
+  font-family: 'Poppins', Courier, monospace;
+  font-weight: 600;
+  font-size: 1.1rem;
+  
+}
+
+footer,
+footer div {
+  display: flex;
+}
+
+footer a {
+  color: aqua;
+}
+
+.footer-divs p,
+.footer-divs a {
+  margin: auto 5px;
+}
+
+.footer-divs a:hover {
+  text-decoration: underline;
+}
+
+.github-logo {
+  height: 40px;
+  border-radius: 25%;
+}

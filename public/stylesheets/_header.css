@@ -1,0 +1,59 @@
+header,
+.logo-name a,
+.nav-links ul {
+  display: flex;
+}
+
+header {
+  border: black solid;
+  background-color: black;
+  padding: 20px 13%;
+  justify-content: space-between;
+
+}
+
+header a {
+  padding: 5px 15px;
+  border-radius: 15px;
+  transition: ease 300ms;
+}
+
+.logo-name {
+  padding: 5px;
+  border-radius: 15px;
+  box-shadow: rgba(148, 148, 148, 0.603) 0px 0px 30px;
+}
+
+.logo {
+  height: 50px;
+}
+
+.name {
+  font-family: 'Abril Fatface', Courier, monospace;
+  font-size: 2.3rem;
+  background-image: url('/images/rainbow.jpg');
+  background-size: cover;
+  color: transparent;
+  -moz-background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.nav-links a {
+  font-size: 0.95em;
+  font-weight: 600;
+  font-family: 'Poppins', Courier, monospace;
+}
+
+.logo,
+.name,
+.nav-links li {
+  margin: auto 5px;
+}
+
+.nav-links ul {
+  margin-top: 20px;
+}
+
+.nav-links a:hover { 
+  background-color: #902cd3a1;
+}

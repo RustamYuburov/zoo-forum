@@ -1,0 +1,39 @@
+<main>
+  <div class="forms">
+    <h1><%= title %></h1>
+    <form action="" method="POST">
+  
+      <label for="title">Message Title</label>
+        <input 
+          type="text"
+          id="title"
+          placeholder="Please enter title"
+          name="title"
+          value="<%= typeof message != 'undefined' ? message.title : '' %>"
+        >
+     
+        <label for="text">Message text</label>
+        <textarea 
+        type="textarea"
+        id="text"
+        placeholder="Please enter text"
+        name="text"
+        ><%= (typeof message != 'undefined') ? message.text : '' %></textarea>
+     
+      <button>Submit</button>
+    </form>
+    <div class="errors-list">
+      <% if (typeof errors != 'undefined') { %>
+        <ul class="">
+          <% errors.forEach(error => { %>
+            <li><h2><%= error.msg %></h2></li>
+            <% }); %>
+          </ul>
+          <% } %> 
+
+      <%if (typeof error !== 'undefined') {%>
+        <p><h2><%=error%></h2></p>
+      <%}%>
+    </div>
+  </div>
+</main>

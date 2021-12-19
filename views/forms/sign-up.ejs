@@ -1,0 +1,54 @@
+<main>
+  <div class="forms">
+    <h1>Sign Up</h1>
+    <h4>Already registered? <a href="/log-in">Log in</a></h4>
+    <form action="" method="POST">
+  
+      <label for="username">Username</label>
+      <input name="username" placeholder="Please enter username" type="text" />
+      <label for="password">Password</label>
+      <input name="password" placeholder="Please enter password" type="password" />
+      <label for="confirmPassword">Confirm Password</label>
+      <input name="confirmPassword" placeholder="Please confirm password" type="password" />
+  
+      <label id = "choose-avatar" for = "ca-selector">Choose an avatar:</label>
+      <div class="ca-selector">
+  
+          <input id="panda" type="radio" name="avatar" value="panda" />
+          <label class="avatar-ca panda" for="panda"></label>
+  
+          <input id="bee" type="radio" name="avatar" value="bee" />
+          <label class="avatar-ca bee" for="bee"></label>
+  
+          <input id="crab" type="radio" name="avatar" value="crab" />
+          <label class="avatar-ca crab" for="crab"></label>
+  
+          <input id="fox" type="radio" name="avatar" value="fox" />
+          <label class="avatar-ca fox" for="fox"></label>
+  
+          <input id="toad" type="radio" name="avatar" value="toad" />
+          <label class="avatar-ca toad" for="toad"></label>
+  
+          <input id="turtle" type="radio" name="avatar" value="turtle" />
+          <label class="avatar-ca turtle" for="turtle"></label>
+  
+      </div>
+      <button >Sign Up</button>
+    </form>
+    <div class="errors-list">
+      <% if (typeof errors != 'undefined') { %>
+        <ul class="">
+          <% errors.forEach(error => { %>
+            <li><h2><%= error.msg %></h2></li>
+            <% }); %>
+          </ul>
+          <% } %> 
+  
+      <% if (typeof msg != 'undefined') { %>
+        <ul class="">
+          <li><h2><%= msg%></h2></li>
+        </ul>
+        <% } %>
+    </div>
+  </div>
+</main>

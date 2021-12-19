@@ -1,0 +1,26 @@
+<main>
+  <div class="forms">
+    <h1><%= confirmationText %></h1>
+    <h3><%= adviceText %></h3>
+    <form action="" method="POST">
+  
+      <label for="password">Password</label>
+      <input name="password" placeholder="Please enter password" type="password" />
+     
+      <button>Submit</button>
+    </form>
+    <div class="errors-list">
+      <% if (typeof errors != 'undefined') { %>
+        <ul class="">
+          <% errors.forEach(error => { %>
+            <li><h2><%= error.msg %></h2></li>
+            <% }); %>
+          </ul>
+          <% } %> 
+
+      <%if (typeof error !== 'undefined') {%>
+        <p><h2><%=error%></h2></p>
+      <%}%>
+    </div>
+  </div>
+</main>
