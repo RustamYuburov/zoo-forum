@@ -1,8 +1,9 @@
 {
-  "name": "members-only",
+  "name": "zoo-forum",
   "version": "0.0.0",
   "engines": {
-    "node": "14.15.3"
+    "node": "14.15.3",
+    "npm": "8.1.4"
   },
   "private": true,
   "scripts": {
