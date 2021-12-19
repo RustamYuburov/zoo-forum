@@ -4,7 +4,7 @@ A backend focused app that allows users to sign up, log in and add new messages 
 Admins can delete messages from database.
 During the time of making this project I learned about passport.js and it's authentication Strategies. And also refreshed my mongoose knowledge.
 
-<!-- > - [Live Demo](https://rocky-crag-22230.herokuapp.com/) -->
+> - [Live Demo](https://floating-sands-68804.herokuapp.com/)
 
 ## Built With
 
