@@ -73,6 +73,8 @@ app.set('views', [
   path.join(__dirname, 'views/partials/'),
 ]);
 app.set('view engine', 'ejs');
+app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(__dirname, '/public'));
 
 app.use(session({ secret: process.env.SECRET, resave: false, saveUninitialized: true }));
 app.use(passport.initialize());
@@ -84,8 +86,7 @@ app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
-app.use(express.static(path.join(__dirname, 'public')));
-app.use(express.static(__dirname, '/public'));
+
 
 // Access the user object from anywhere in our application
 app.use((req, res, next) => {
