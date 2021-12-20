@@ -1,8 +1,8 @@
 # Zoo Forum | Members Only
 
-A backend focused app that allows users to sign up, log in and add new messages to the database. Registerd users also have different level of permission. Non-Authorised and simple users can't see message's author and date. Members and Admin can see it. And only
-Admins can delete messages from database.
-During the time of making this project I learned about passport.js and it's authentication Strategies. And also refreshed my mongoose knowledge.
+A backend focused app that allows users to sign up, log in and add new messages to the database. Registerd users also have different level of permission. Non-Authorised and simple users can't see message's author and date. Members and Admin can see it.<br />
+And only Admins can delete messages from database.<br />
+During the time of making this project I learned about passport.js and it's authentication Strategies. And also refreshed my mongoose knowledge.<br />
 
 > - [Live Demo](https://floating-sands-68804.herokuapp.com/)
 
@@ -19,16 +19,15 @@ During the time of making this project I learned about passport.js and it's auth
 
 ### Secret Passwords:
 
-An administrator password has been added to act as an extremely basic security feature. Messages cannot be deleted from the database unless the admin password, `secretadminpass`, is entered into the input field.
-A member password has been added to show project's feature that users has different level of permission. Message author and date 
-can't be seen unless the password, `secretmemberpass`, is entered into the input field.
+An administrator password has been added to act as an extremely basic security feature. Messages cannot be deleted from the database unless the admin password, `secretadminpass`, is entered into the input field.<br />
+A member password has been added to show project's feature that users has different level of permission. Message author and date can't be seen unless the password, `secretmemberpass`, is entered into the input field.
 
 ### Installing and running
 
 Don't forget to set your own MongoDB database
 
 ```bash
-git clone https://github.com/RustamYuburov/members-only
+git clone https://github.com/RustamYuburov/zoo-forum 
 cd inventory-application
 npm install
 npm run serverstart
